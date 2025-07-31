@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioPoint</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>PhysioPoint</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="service.html">Services</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('active');
+  }
+</script>
+<section id="home" class="cta">
+  <h1>Welcome to PhysioPoint Physiotherapy</h1>
+  <p>Regain your mobility and live pain-free. Book your session today!</p>
+  <a href="appointment.html" style="background:#008080;color:white;padding:10px 20px;display:inline-block;text-decoration:none;margin-top:10px;">Book Now</a>
+</section>
+
+
+<section style="background-color: #f0fafa; padding: 40px 20px;">
+  <h2 style="text-align: center;">Meet Our Experts</h2>
+  <div class="team">
+    <div class="card">
+      <h3>Dr. Neha Sharma</h3>
+       <img src="assets/dr neha.jpg">
+      <p><strong>Title:</strong> Senior Physiotherapist</p>
+      <p><strong>Specialty:</strong> Musculoskeletal Rehabilitation</p>
+      <p>Over 10 years of experience treating back pain, postural issues, and post-operative rehab.</p>
+    </div>
+    <div class="card">
+      <h3>Dr. Rahul Verma</h3>
+      <img src= "assets/dr rahul.jpg">
+      <p><strong>Title:</strong> Sports Injury Specialist</p>
+      <p><strong>Specialty:</strong> Sports Physio & Performance Training</p>
+      <p>Worked with professional athletes and focuses on injury prevention and recovery.</p>
+    </div>
+    <div class="card">
+      <h3>Dr. Anjali Patil</h3>
+       <img  src="assets/dr anjali.jpg">
+      <p><strong>Title:</strong> Pediatric Physiotherapist</p>
+      <p><strong>Specialty:</strong> Child Development & Movement Therapy</p>
+      <p>Specializes in treating neurological and developmental conditions in children.</p>
+    </div>
+    <div class="card">
+      <h3>Dr. Kunal Mehra</h3>
+      <img src="assets\dr kunal.png">
+      <p><strong>Title:</strong> Neuro Physiotherapist</p>
+      <p><strong>Specialty:</strong> Stroke & Paralysis Rehab</p>
+      <p>Focuses on helping patients recover movement and strength post neurological damage.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
+</footer>
+
+</body>
+</html> 

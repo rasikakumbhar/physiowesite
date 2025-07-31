@@ -1,0 +1,315 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+   header {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  background: #008080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 999;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+body {
+  padding-top: 80px; /* space for fixed header */
+}
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #008080;
+    }
+    .cta {
+      background-color: #e0f7f7;
+      padding: 100px 80px;
+      text-align: center;
+    }
+    .cta h1 {
+      font-size: 2.5rem;
+    }
+    .services, .team, .testimonials, .faqs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    iframe {
+      width: 95%;
+      height: 300px;
+      border: none;
+
+    }
+
+
+_about page_
+
+.about-section {
+  padding: 60px 20px;
+  background: #f9fdfd;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-content {
+  flex: 1 1 500px;
+  color: #333;
+}
+
+.about-content h2 {
+  font-size: 2.4rem;
+  color: #008080;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.clinic-values {
+  background-color: #e6fafa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.clinic-values h3 {
+  color: #006666;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.clinic-values ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.clinic-values li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.testimonials .card {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 5px solid #008080;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.testimonials .card:hover {
+  transform: translateY(-5px);
+}
+.testimonials img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.testimonials h4 {
+  margin: 10px 0 5px;
+  color: #008080;
+}
+.testimonials p {
+  font-style: italic;
+  color: #333;
+}
+
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+}
+.faq-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #fff;
+  border-left: 5px solid #008080;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.faq-item h4 {
+  color: #008080;
+  margin-bottom: 10px;
+}
+.faq-item p {
+  margin: 0;
+  color: #333;
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.services .card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #008080;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.services .card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.services img {
+  margin-bottom: 10px;
+}
+.services h4 {
+  margin: 10px 0 5px;
+  color: #008080;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px; /* shift slightly left */
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #008080;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioPoint</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>PhysioPoint</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="service.html">Services</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('active');
+  }
+</script>
+<section id="contact" style="background-color: #f9f9f9;">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">Have questions? Reach out to us directly or visit our clinic. We're here to help!</p>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding-top: 30px;">
+    <!-- Contact Info -->
+    <div style="flex: 1; min-width: 300px;">
+            <p><h3>Clinic Address</h3>
+  🏥 PhysioPoint Physiotherapy Clinic<br>
+  Shop No. 3, Ground Floor, Patel Heights,<br>
+  Opposite Axis Bank, Station Road,<br>
+  Ambernath East, Thane District,<br>
+  Maharashtra - 421501
+</p>
+<style>
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form input[type="submit"]:hover {
+  background-color: #006666;
+}
+</style>
+      <h3>Call or WhatsApp</h3>
+      <p>📞 <a href="tel:+919876543210" style="color: #008080;">+91 9876543210</a></p>
+
+      <h3>Email Us</h3>
+      <p>📧 <a href="mailto:PhysioPoint@gmail.com" style="color: #008080;">PhysioPoint@gmail.com</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3>Quick Message</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message..." rows="5" required></textarea>
+        <input type="submit" value="Send Message" style="background-color: #008080; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+      </form>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <div style="margin-top: 40px;">
+    <h3 style="text-align:center;">Find Us on Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.954557844662!2d73.1599933!3d19.0697616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795b01a86cde5%3A0xf15f67bb9e68ad4f!2sSatyam%20Elegance%2C%20Sarvoday%20Nagar%2C%20Chikloli%2C%20Ambernath%2C%20Maharashtra%20421005!5e0!3m2!1sen!2sin!4v1721800000000"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="PhysioPointPhysiotherapy Location"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
+</footer>
+
+</body>
+</html> 

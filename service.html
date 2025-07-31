@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioPoint</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>PhysioPoint</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="service.html">Services</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('active');
+  }
+</script>
+<section id="services">
+  <h2>Our Services</h2>
+  <p>We offer a wide range of personalized physiotherapy services tailored to all age groups and conditions. Whether you're recovering from surgery or managing chronic pain, our expert care is here for you.</p>
+
+  <div class="services">
+    <div class="card fade-in">
+  
+      <h4>Orthopedic Physiotherapy</h4>
+      <img src="assets/ortho.jpeg" alt="Orthopedic Physiotherapy">
+      <p>Helps patients recover from fractures, surgeries, joint injuries, and back/neck pain using targeted exercises and manual therapy.</p>
+    </div>
+    <div class="card fade-in">
+   
+      <h4>Neurological Rehabilitation</h4>
+      <img src="assets/neuro.jpg">
+      <p>Designed for patients suffering from stroke, spinal cord injury, Parkinson’s, or paralysis with a focus on regaining strength and mobility.</p>
+    </div>
+    <div class="card fade-in">
+  
+      <h4>Pediatric Physiotherapy</h4>
+<img src="assets/ped.png">
+      <p>Focuses on early development and physical health in children facing conditions like cerebral palsy, delayed milestones, and muscle weakness.</p>
+    </div>
+    <div class="card fade-in">
+           <h4>Geriatric Physiotherapy</h4>
+<img src="assets/gen.jpg">
+      <p>Tailored programs to manage age-related conditions like arthritis, balance issues, and mobility loss to help seniors stay independent.</p>
+    </div>
+    <div class="card fade-in">
+  
+      <h4>Sports Injury Therapy</h4>
+  <img src="assets/sport.jpg">
+      <p>Specialized care for athletes, including injury prevention, recovery, and performance enhancement through taping, dry needling, and rehab exercises.</p>
+    </div>
+    <div class="card fade-in">
+
+      <h4>Women's Health Physiotherapy</h4>
+  <img src="assets/women.jpg">
+      <p>Support for prenatal & postnatal care, pelvic floor therapy, and posture correction for expecting and new mothers.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+<footer>
+  <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
+</footer>
+
+</body>
+</html> 

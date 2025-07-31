@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioPoint</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>PhysioPoint</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="service.html">Services</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('active');
+  }
+</script>
+<section id="faqs" style="padding: 50px 20px; background-color: #f9f9f9;">
+  <h2 style="text-align: center;">Frequently Asked Questions</h2>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+    Got questions? We’ve answered some of the most common ones below. If you still have doubts, feel free to <a href="contact.html">contact us</a>.
+  </p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <h4>1. Do I need a doctor’s referral to start physiotherapy?</h4>
+      <p>No, you do not need a referral. You can book a session directly with us. However, if you have a prescription, please bring it along.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>2. How long does each physiotherapy session last?</h4>
+      <p>Each session typically lasts 30 to 45 minutes, depending on your condition and the treatment required.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>3. What should I wear to my appointment?</h4>
+      <p>Wear loose, comfortable clothing that allows free movement. If we’re treating a specific body area, make sure it's easily accessible.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>4. Will I feel pain during treatment?</h4>
+      <p>You may feel some discomfort during exercises or manual therapy, but nothing unbearable. Your therapist will always work within your pain limits.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>5. How many sessions will I need?</h4>
+      <p>This depends on your condition. Some patients improve in a few sessions, while others may require a longer treatment plan.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>6. Do you offer home visits?</h4>
+      <p>Yes, we offer home physiotherapy services for elderly patients, post-surgery rehab, or anyone unable to travel. Contact us to schedule.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>7. Is physiotherapy safe for children and seniors?</h4>
+      <p>Absolutely. We offer tailored programs for pediatric and geriatric care, ensuring safety and effectiveness for all age groups.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>8. What conditions do you treat?</h4>
+      <p>We treat back pain, neck pain, joint injuries, stroke rehab, sports injuries, post-operative care, neurological conditions, and more.</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
+</footer>
+
+</body>
+</html> 

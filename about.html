@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioPoint</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>PhysioPoint</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="service.html">Services</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('active');
+  }
+</script>
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="assets/clinic.jpg" alt="PhysioPoint Physiotherapy Clinic">
+    </div>
+    <div class="about-content">
+      <h2>About Physiotherapy</h2>
+      <p>
+        At <strong>PhysioPoint Physiotherapy</strong>, we believe that healing is not just about treatment — it's about personalized care, trust, and long-term well-being. Our modern clinic in Ambernath West is designed to create a calming, welcoming space where patients feel supported at every step.
+      </p>
+      <p>
+        With a focus on evidence-based practice, we offer services ranging from orthopedic recovery, neuro-rehabilitation, pediatric therapy, women’s health, and sports injury management. Every treatment plan is tailored to your unique goals, whether it's restoring strength, improving mobility, or enhancing athletic performance.
+      </p>
+      <p>
+        We are proud to serve our community with compassion, professionalism, and advanced therapeutic techniques to ensure lasting results.
+      </p>
+    </div>
+  </div>
+
+<div class="clinic-values">
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>✅ Personalized care for every patient</li>
+          <li>✅ State-of-the-art equipment and facilities</li>
+          <li>✅ Holistic approach to recovery and wellness</li>
+          <li>✅ Clean, safe, and accessible clinic environment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
+</footer>
+
+</body>
+</html> 

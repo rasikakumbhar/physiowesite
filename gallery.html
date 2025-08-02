@@ -1,132 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PhysioPoint</title>
-<link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhysioPoint</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<header>
-  <h1>PhysioPoint</h1>
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <nav id="main-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="service.html">Services</a>
-    <a href="appointment.html">Appointment</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="faqs.html">FAQs</a>
-  </nav>
-</header>
+    <header>
+        <h1>PhysioPoint</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+    </header>
 
-<script>
-  function toggleMenu() {
-    document.getElementById('main-nav').classList.toggle('active');
-  }
-</script>
-<section id="gallery" class="gallery-section">
-   <h2 style="text-align: center;">Our Physiotherapy Gallery</h2>
-  <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
-    We bring expert physiotherapy care right to your doorstep. Here's how we help our patients recover comfortably at home.
-  </p>
+    <script>
+        function toggleMenu() {
+            document.getElementById('main-nav').classList.toggle('active');
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 95%;
+            background: #008080;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            z-index: 999;
+        }
+        
+        .navbar {
+            position: relative;
+        }
+        
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #008080;
+                padding: 10px 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .nav-links li {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+        
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        
+        section.gallery {
+            padding: 60px 30px;
+            background: #f0fdfd;
+        }
+        
+        section.gallery h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #006666;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #008080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        < <script>
+            const toggle = document.getElementById("menu-toggle"); const navLinks = document.getElementById("nav-links"); toggle.addEventListener("click", () => { navLinks.classList.toggle("show"); });
+            </script>
+
+            <section id="gallery" class="gallery-section">
+                <h2 style="text-align: center;">Our Physiotherapy Gallery</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+                    We bring expert physiotherapy care right to your doorstep. Here's how we help our patients recover comfortably at home.
+                </p>
+                <style>
+                    .team {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 20px;
+                        padding: 10px;
+                        justify-items: center;
+                    }
+                    
+                    .card {
+                        position: relative;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        transition: transform 0.4s ease, box-shadow 0.4s ease;
+                    }
+                    
+                    .card img {
+                        width: 250px;
+                        height: 200px;
+                        object-fit: cover;
+                        border-radius: 12px;
+                        transition: transform 0.4s ease, filter 0.4s ease;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .card:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+                    }
+                    
+                    .card:hover img {
+                        transform: scale(1.08);
+                        filter: brightness(1.05) contrast(1.05);
+                        cursor: pointer;
+                        box-shadow: 0 0 20px #00e6e6, 0 0 40px #00e6e6 inset;
+                    }
+                </style>
+                <div class="team">
+                    <div class="card">
+                        <img src="assets/resized_image_300x200.jpg" width="300" height="200" alt="Physiotherapist assisting a patient with leg exercises on a treatment table in a bright, welcoming clinic setting with medical posters on the wall and rehabilitation equipment nearby. The atmosphere appears supportive and encouraging.">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="assets/session.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="assets/elder.jpg" width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://global-uploads.webflow.com/60d3395d60e9503a507bae32/60ffe97f1578090b5919a3e3_Pediatric%20Physiotherapy.png " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.tribecacare.com/wp-content/uploads/2022/07/blogs-7-1.png " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.apollospectra.com/backend/web/uploads/1836499762.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://physiqure.com/wp-content/uploads/2020/02/Home-1.png " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/9.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/2.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/3.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/5.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://newmarketphysiosolutions.com/wp-content/uploads/2023/07/Pediatric-Physiotherapy.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://tse1.mm.bing.net/th/id/OIP._Ca6YVz7bppIn3f-2vAznwHaE8?pid=Api&P=0&h=180 " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.WDBMjDHKqZZngn0SZ2eg5wHaE8?pid=Api&P=0&h=180 " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://media.gettyimages.com/id/1460882073/photo/stretching-at-physiotherapy.jpg?s=612x612&w=gi&k=20&c=AJUhdacR3LbeUAPkCb244cVxNIwxG1qo0X3altzZrtA=" width=" 300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/4.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/10.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://www.rehealphysiotherapy.com/images/gallery/11.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://thumbs.dreamstime.com/b/physiotherapy-stretching-help-old-man-doctor-training-rehabilitation-injury-medical-healing-healthcare-278504239.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://sehagarden.com/wp-content/uploads/2021/11/Physiotherapy-Hospital-For-Stroke-Patients-630x408.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="http://fastrelief.zandupainrelief.com/wp-content/uploads/2023/03/role-of-physiotherapy-in-womens-health-scaled.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://thefoundryclinic.co.uk/wp-content/uploads/2022/08/Specialist-physiotherapy-in-kent-scaled.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://sanchetihospital.org/wp-content/uploads/2018/08/1-new.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://wetakecare.in/wp-content/uploads/2021/04/sports-1400x732.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.1tqXkfFf7GaLUg2bQK06RwHaE8?pid=Api&P=0&h=180 " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.9B315VOiL6aWFTZF0zgizAHaHa?pid=Api&P=0&h=180 " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://rehabindia.org/blog/wp-content/uploads/2022/12/Physiotherapy-Clinic-kolkata-768x511.jpg " width="300 " height="200 ">
+                    </div>
+                    <div class="card fade-in ">
+
+                        <img src="https://media.gettyimages.com/id/1468021722/photo/childrens-physiotherapy.jpg?s=612x612&w=gi&k=20&c=6OTHbgOfkRvPAGpzNeuLnCgCZn63H6DdD4NPcYwxbQI=" width=" 300 " height="200 ">
+                    </div>
 
 
-<div class="team">
-  <div class="card">
-     <img src="assets/resized_image_300x200.jpg " >
-</div>
-  <div class="card fade-in">
-
-    <img src="assets/session.jpg" >
-</div>
-  <div class="card fade-in">
-
-    <img src="assets/elder.jpg" >
-</div>
-  <div class="card fade-in">
-
-    <img src="https://global-uploads.webflow.com/60d3395d60e9503a507bae32/60ffe97f1578090b5919a3e3_Pediatric%20Physiotherapy.png">
-</div>
- <div class="card fade-in">
-
-    <img src="https://www.tribecacare.com/wp-content/uploads/2022/07/blogs-7-1.png">
-</div>
- <div class="card fade-in">
-
-    <img src="https://www.apollospectra.com/backend/web/uploads/1836499762.jpg">
-</div>
- <div class="card fade-in">
-
-    <img src="https://physiqure.com/wp-content/uploads/2020/02/Home-1.png">
-</div>
- <div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/9.jpg">
-</div>
- <div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/2.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/3.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/5.jpg"">
-</div>
-<div class="card fade-in">
-
-    <img src="https://newmarketphysiosolutions.com/wp-content/uploads/2023/07/Pediatric-Physiotherapy.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://tse1.mm.bing.net/th/id/OIP._Ca6YVz7bppIn3f-2vAznwHaE8?pid=Api&P=0&h=180">
-</div>
-<div class="card fade-in">
-
-    <img src="https://tse1.mm.bing.net/th/id/OIP.WDBMjDHKqZZngn0SZ2eg5wHaE8?pid=Api&P=0&h=180">
-</div>
-<div class="card fade-in">
-
-    <img src="https://media.gettyimages.com/id/1460882073/photo/stretching-at-physiotherapy.jpg?s=612x612&w=gi&k=20&c=AJUhdacR3LbeUAPkCb244cVxNIwxG1qo0X3altzZrtA=">
-</div>
-<div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/4.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/10.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://www.rehealphysiotherapy.com/images/gallery/11.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://thumbs.dreamstime.com/b/physiotherapy-stretching-help-old-man-doctor-training-rehabilitation-injury-medical-healing-healthcare-278504239.jpg">
-</div>
-<div class="card fade-in">
-
-    <img src="https://sehagarden.com/wp-content/uploads/2021/11/Physiotherapy-Hospital-For-Stroke-Patients-630x408.jpg">
-</div>
-</div>
-</section>
+                </div>
+            </section>
 
 
-<footer>
-  <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
-</footer>
+            <footer>
+                <p>&copy; 2025 PhysioPoint. All rights reserved.</p>
+            </footer>
 
-</body>
+    </body>
+
 </html>
